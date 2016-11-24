@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ProvideMyLocationViewController: UIViewController {
 
@@ -29,11 +30,43 @@ class ProvideMyLocationViewController: UIViewController {
     
     @IBOutlet weak var Provide_My_Location_Button_Text: UIButton!
     
+    //Initialization for audio playing functionality
+    var myPlayer:AVAudioPlayer?
     
+    var Danger_Button_Tapped_Count = 0
     @IBAction func Danger_Button_Tapped(_ sender: UIButton) {
         
+        Danger_Button_Tapped_Count += 1
         
+        if Danger_Button_Tapped_Count % 2 == 0 {
+            
+            Danger_Button_Tapped_Count = 0
+            
+            myPlayer?.stop()
+
+            
+        } else {
+            
+            let soundName = Manager.currentSoundEffect_Danger
+            
+            //Choose audio file to be played
+            let path = Bundle.main.path(forResource: "\(soundName)", ofType: "mp3")
+            
+            do {
+                myPlayer = try AVAudioPlayer(contentsOf: NSURL.fileURL(withPath: path!))
+            } catch _ {
+                myPlayer = nil
+            }
+            
+            //Play the audio file
+            myPlayer?.stop()
+            myPlayer?.currentTime = 0.0
+            myPlayer?.play()
+            
+        }
+
     }
+    
     
     func loadTheme() {
         

@@ -10,8 +10,43 @@ import UIKit
 
 class SetAlarmsViewController: UIViewController {
 
-    
+    //「設定鈴聲」的按鈕，使用的方法是 Action Sheet。
     @IBAction func Set_Alarm_1(_ sender: UIButton) {
+        
+        let title = "設定「色狼」鈴聲"
+        let message = "請選擇一個鈴聲："
+        
+        
+        let optionOneText = "混合警報" //DANGER Alarm SOUND EFFECT.mp3
+        let optionTwoText = "龍捲風警報" //Tornado Warning Siren Sound Effect.mp3
+        let optionThreeText = "空襲警報" //Air Raid Siren Modern SOUND EFFECT.mp3
+        
+        
+        let actionSheet = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.actionSheet)
+        
+        let actionOne = UIAlertAction(title: optionOneText, style: .default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            (Manager.currentSoundEffect_Pervert = "DANGER Alarm SOUND EFFECT")
+            })
+        
+        let actionTwo = UIAlertAction(title: optionTwoText, style: .default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            (Manager.currentSoundEffect_Pervert = "Tornado Warning Siren Sound Effect")
+        })
+        
+        let actionThree = UIAlertAction(title: optionThreeText, style: .default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            (Manager.currentSoundEffect_Pervert = "Air Raid Siren Modern SOUND EFFECT")
+        })
+        
+        
+        actionSheet.addAction(actionOne)
+        actionSheet.addAction(actionTwo)
+        actionSheet.addAction(actionThree)
+        
+        
+        self.present(actionSheet, animated: true, completion: nil)
+        
         
         
     }
@@ -19,12 +54,78 @@ class SetAlarmsViewController: UIViewController {
     
     @IBAction func Set_Alarm_2(_ sender: UIButton) {
         
+        let title = "設定「跟蹤」鈴聲"
+        let message = "請選擇一個鈴聲："
+        
+        
+        let optionOneText = "混合警報" //DANGER Alarm SOUND EFFECT.mp3
+        let optionTwoText = "龍捲風警報" //Tornado Warning Siren Sound Effect.mp3
+        let optionThreeText = "空襲警報" //Air Raid Siren Modern SOUND EFFECT.mp3
+        
+        
+        let actionSheet = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.actionSheet)
+        
+        let actionOne = UIAlertAction(title: optionOneText, style: .default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            (Manager.currentSoundEffect_Stalker = "DANGER Alarm SOUND EFFECT")
+        })
+        
+        let actionTwo = UIAlertAction(title: optionTwoText, style: .default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            (Manager.currentSoundEffect_Stalker = "Tornado Warning Siren Sound Effect")
+        })
+        
+        let actionThree = UIAlertAction(title: optionThreeText, style: .default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            (Manager.currentSoundEffect_Stalker = "Air Raid Siren Modern SOUND EFFECT")
+        })
+        
+        
+        actionSheet.addAction(actionOne)
+        actionSheet.addAction(actionTwo)
+        actionSheet.addAction(actionThree)
+        
+        
+        self.present(actionSheet, animated: true, completion: nil)
         
     }
     
     
     @IBAction func Set_Alarm_3(_ sender: UIButton) {
         
+        let title = "設定「危險」鈴聲"
+        let message = "請選擇一個鈴聲："
+        
+        
+        let optionOneText = "混合警報" //DANGER Alarm SOUND EFFECT.mp3
+        let optionTwoText = "龍捲風警報" //Tornado Warning Siren Sound Effect.mp3
+        let optionThreeText = "空襲警報" //Air Raid Siren Modern SOUND EFFECT.mp3
+        
+        
+        let actionSheet = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.actionSheet)
+        
+        let actionOne = UIAlertAction(title: optionOneText, style: .default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            (Manager.currentSoundEffect_Danger = "DANGER Alarm SOUND EFFECT")
+        })
+        
+        let actionTwo = UIAlertAction(title: optionTwoText, style: .default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            (Manager.currentSoundEffect_Danger = "Tornado Warning Siren Sound Effect")
+        })
+        
+        let actionThree = UIAlertAction(title: optionThreeText, style: .default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            (Manager.currentSoundEffect_Danger = "Air Raid Siren Modern SOUND EFFECT")
+        })
+        
+        
+        actionSheet.addAction(actionOne)
+        actionSheet.addAction(actionTwo)
+        actionSheet.addAction(actionThree)
+        
+        
+        self.present(actionSheet, animated: true, completion: nil)
         
     }
     

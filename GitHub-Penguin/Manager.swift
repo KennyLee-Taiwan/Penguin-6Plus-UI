@@ -12,5 +12,8 @@ struct Manager {
     
     static var messageText = String()
     static var currentThemeNumber = 0
+    static var currentSoundEffect_Pervert = "DANGER Alarm SOUND EFFECT"
+    static var currentSoundEffect_Stalker = "DANGER Alarm SOUND EFFECT"
+    static var currentSoundEffect_Danger = "DANGER Alarm SOUND EFFECT"
     
 }

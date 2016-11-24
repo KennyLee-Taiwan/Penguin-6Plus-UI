@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1D3FE5B142FE2964DF32F917 /* Pods_GitHub_Penguin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 046CE69707C730DBEA6C1380 /* Pods_GitHub_Penguin.framework */; };
+		D41451201DE70782006BD543 /* Air Raid Siren Modern SOUND EFFECT.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D414511E1DE70782006BD543 /* Air Raid Siren Modern SOUND EFFECT.mp3 */; };
+		D41451211DE70782006BD543 /* Tornado Warning Siren Sound Effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D414511F1DE70782006BD543 /* Tornado Warning Siren Sound Effect.mp3 */; };
+		D45ECF3A1DE702CE008F6CAA /* DANGER Alarm SOUND EFFECT.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D45ECF391DE702CE008F6CAA /* DANGER Alarm SOUND EFFECT.mp3 */; };
 		D485191D1DD9A3B90051FDBA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D485191C1DD9A3B90051FDBA /* GoogleService-Info.plist */; };
 		D487B56C1DE45E740093E02E /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D487B56B1DE45E740093E02E /* Manager.swift */; };
 		D4AE60BC1DD98E2100F7A7B6 /* SetAlarmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AE60BB1DD98E2100F7A7B6 /* SetAlarmsViewController.swift */; };
@@ -30,6 +33,9 @@
 /* Begin PBXFileReference section */
 		046CE69707C730DBEA6C1380 /* Pods_GitHub_Penguin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHub_Penguin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1018BC096ED5164B70FE5E49 /* Pods-GitHub-Penguin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHub-Penguin.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitHub-Penguin/Pods-GitHub-Penguin.release.xcconfig"; sourceTree = "<group>"; };
+		D414511E1DE70782006BD543 /* Air Raid Siren Modern SOUND EFFECT.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Air Raid Siren Modern SOUND EFFECT.mp3"; sourceTree = "<group>"; };
+		D414511F1DE70782006BD543 /* Tornado Warning Siren Sound Effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tornado Warning Siren Sound Effect.mp3"; sourceTree = "<group>"; };
+		D45ECF391DE702CE008F6CAA /* DANGER Alarm SOUND EFFECT.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "DANGER Alarm SOUND EFFECT.mp3"; sourceTree = "<group>"; };
 		D485191C1DD9A3B90051FDBA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D487B56B1DE45E740093E02E /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		D4AE60BB1DD98E2100F7A7B6 /* SetAlarmsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetAlarmsViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +109,9 @@
 				D487B56B1DE45E740093E02E /* Manager.swift */,
 				D4AE60BB1DD98E2100F7A7B6 /* SetAlarmsViewController.swift */,
 				D4DB3AFA1DD847DD00456125 /* SetParentsViewController.swift */,
+				D45ECF391DE702CE008F6CAA /* DANGER Alarm SOUND EFFECT.mp3 */,
+				D414511E1DE70782006BD543 /* Air Raid Siren Modern SOUND EFFECT.mp3 */,
+				D414511F1DE70782006BD543 /* Tornado Warning Siren Sound Effect.mp3 */,
 				D4DB3AF81DD845B400456125 /* UpdateAccountInfoViewController.swift */,
 				D4DB3AF61DD8453A00456125 /* SignUpViewController.swift */,
 				D4DB3AF41DD8438D00456125 /* SettingsViewController.swift */,
@@ -191,8 +200,11 @@
 			files = (
 				D4DB3AE91DD83E9200456125 /* LaunchScreen.storyboard in Resources */,
 				D485191D1DD9A3B90051FDBA /* GoogleService-Info.plist in Resources */,
+				D41451201DE70782006BD543 /* Air Raid Siren Modern SOUND EFFECT.mp3 in Resources */,
+				D41451211DE70782006BD543 /* Tornado Warning Siren Sound Effect.mp3 in Resources */,
 				D4DB3AE61DD83E9200456125 /* Assets.xcassets in Resources */,
 				D4DB3AE41DD83E9200456125 /* Main.storyboard in Resources */,
+				D45ECF3A1DE702CE008F6CAA /* DANGER Alarm SOUND EFFECT.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
